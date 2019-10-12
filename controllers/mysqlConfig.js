@@ -99,7 +99,7 @@ let allServices = {
   },
   //获取证书列表
   certificateList:function(){
-    let _sql = 'select * from certificateList';
+    let _sql = 'select * from certificatelist';
     return allServices.query(_sql);
   },
   //获取权限列表
