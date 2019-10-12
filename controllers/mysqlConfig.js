@@ -62,7 +62,7 @@ let allServices = {
     return allServices.query(_sql);
   },
   getOrderList:function(){
-    let _sql = `select * from orderList;`;
+    let _sql = `select * from orderlist;`;
     return allServices.query(_sql);
   },
   saveOrderList:function(tableData){
