@@ -75,7 +75,7 @@ let allServices = {
       return allServices.query(_sql);
   },
   deleteOrderList:function(id){
-    let _sql = `DELETE FROM orderList WHERE id=${id};`;
+    let _sql = `DELETE FROM orderlist WHERE id=${id};`;
     return allServices.query(_sql);
   },
 
@@ -114,7 +114,7 @@ let allServices = {
   },
   // 获取集权下的权限信息
   clusterAllocationList:function (){
-    let _sql = `select * from clusterallocations`
+    let _sql = `select * from clusterallocations`;
     return allServices.query(_sql);
   },
   // 根据nodeId删除某一个节点
@@ -122,6 +122,14 @@ let allServices = {
     let _sql = `delete from clustermenuitemlist where nodeId = '${id}'`;
     return allServices.query(_sql);
   },
+
+
+
+  // 获取云慕课课程
+  cloudMoocCourse:function () {
+    let _sql = 'select * from cloud_mooc_course';
+    return allServices.query(_sql);
+  }
 };
 
 
