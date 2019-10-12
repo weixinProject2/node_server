@@ -62,7 +62,7 @@ let allServices = {
     return allServices.query(_sql);
   },
   getOrderList:function(){
-    let _sql = `select * from orderList;`;
+    let _sql = `select * from orderlist;`;
     return allServices.query(_sql);
   },
   saveOrderList:function(tableData){
@@ -99,7 +99,7 @@ let allServices = {
   },
   //获取证书列表
   certificateList:function(){
-    let _sql = 'select * from certificateList';
+    let _sql = 'select * from certificatelist';
     return allServices.query(_sql);
   },
   //获取权限列表
